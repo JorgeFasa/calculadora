@@ -50,7 +50,7 @@ function ejecutar(){
         resultadofinal.textContent = resultadofinal.textContent  + "0";
     }
     resetear.onclick = function(e){
-        resetear();
+        resetearFN();
     }
     suma.onclick = function(e){
         variable1 = resultadofinal.textContent;
@@ -81,7 +81,7 @@ function ejecutar(){
   function limpiar(){
     resultadofinal.textContent = "";
   }
-  function resetear(){
+  function resetearFN(){
     resultadofinal.textContent = "";
     variable1 = 0;
     variable2 = 0;
@@ -104,6 +104,6 @@ function ejecutar(){
         res = parseFloat(variable1) / parseFloat(variable2);
         break;
     }
-    resetear();
+    resetearFN();
     resultadofinal.textContent = res;
   }  
